@@ -2,10 +2,10 @@ package pro.sky.java.course2.webstore.data;
 
 import java.util.Objects;
 
-public class Item {
+public class Product {
     private final int id;
 
-    public Item(int id) {
+    public Product(int id) {
         this.id = id;
     }
 
@@ -16,9 +16,9 @@ public class Item {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Item)) return false;
-        Item item = (Item) o;
-        return id == item.id;
+        if (!(o instanceof Product)) return false;
+        Product product = (Product) o;
+        return id == product.id;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
+        return "Product{" +
                 "id=" + id +
                 '}';
     }

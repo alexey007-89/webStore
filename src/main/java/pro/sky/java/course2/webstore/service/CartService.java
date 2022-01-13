@@ -1,12 +1,13 @@
 package pro.sky.java.course2.webstore.service;
 
-import pro.sky.java.course2.webstore.data.Item;
+import pro.sky.java.course2.webstore.data.Product;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public interface CartService {
-    void addItemToCart(String id);
+    void addProductToCart(ArrayList<Integer> idList);
 
-    Collection<Item> getCart();
+    Collection<Product> getCart();
 
 }
